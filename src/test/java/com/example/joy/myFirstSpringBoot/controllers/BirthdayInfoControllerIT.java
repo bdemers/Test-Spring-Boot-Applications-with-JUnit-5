@@ -38,7 +38,6 @@ class BirthdayInfoControllerIT {
 	private  MockMvc mockMvc;
 	
 	@Test
-	@WithMockUser(username = TEST_USER_ID)
 	public void testGetBirthdayDOW() throws Exception {
 		testDOW(bd1,"SATURDAY");
 		testDOW(bd2,"TUESDAY");
@@ -57,7 +56,6 @@ class BirthdayInfoControllerIT {
 	}
 	
 	@Test
-	@WithMockUser(username = TEST_USER_ID)
 	public void testGetBirthdaytestStarSign() throws Exception {
 		testStarSign(bd1,"Cancer");
 		testStarSign(bd2,"Aquarius");
